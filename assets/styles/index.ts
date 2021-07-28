@@ -299,4 +299,39 @@ export default StyleSheet.create({
   iconMenu: {
     alignItems: "center",
   },
+
+
+  //SIGNUP + PROFILE SET UP
+  textInput:{
+    alignSelf: 'stretch',
+    height: 40,
+    marginBottom: 30, 
+    color: '#000000',
+    borderWidth: 2,
+    borderColor: '#FF5722',
+    borderRadius: 20 ,
+    backgroundColor : "#FFFFFF"
+    
+  },
+
+  textHeader:{
+    fontSize: 24,
+    color:'#000000',
+    paddingBottom: 10, 
+    marginBottom: 40,
+    textAlign: "center" 
+    
+  },
+
+  aboutMe:{
+    alignSelf: 'stretch',
+    height: 80,
+    marginBottom: 30, 
+    color: '#000000',
+    borderWidth: 2,
+    borderColor: '#FF5722',
+    borderRadius: 10 ,
+    backgroundColor : "#FFFFFF"
+
+  }
 });
