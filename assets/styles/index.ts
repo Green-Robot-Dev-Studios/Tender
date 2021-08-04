@@ -303,22 +303,28 @@ export default StyleSheet.create({
 
   //SIGNUP + PROFILE SET UP
   textInput:{
-    alignSelf: 'stretch',
     height: 40,
     marginBottom: 30, 
     color: '#000000',
-    borderWidth: 2,
-    borderColor: '#FF5722',
-    borderRadius: 20 ,
+    borderWidth: 1,
+    borderRadius: 10 ,
+    width: 300,
+    paddingLeft: 20,
+    alignSelf: "center",
+    paddingRight: 20,
     backgroundColor : "#FFFFFF"
+  
     
   },
 
   textHeader:{
-    fontSize: 24,
+    fontSize: 40,
+    paddingTop: 100,
     color:'#000000',
     paddingBottom: 10, 
     marginBottom: 40,
+    
+    fontWeight: 'bold',
     textAlign: "center" 
     
   },
@@ -333,5 +339,21 @@ export default StyleSheet.create({
     borderRadius: 10 ,
     backgroundColor : "#FFFFFF"
 
-  }
+  },
+  roundedButtonSign: {
+    justifyContent: "center",
+    flexDirection: "row",
+    alignItems: "center",
+    marginLeft: 90,
+    height: 50,
+    width: 200,
+    borderRadius: 20,
+    backgroundColor: SECONDARY_COLOR,
+    
+  },
+  
+
+ 
 });
+
+

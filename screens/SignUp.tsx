@@ -7,13 +7,13 @@ import {
 import { TextInput } from 'react-native-gesture-handler';
 import { createStackNavigator } from "@react-navigation/stack";
 import styles from "../assets/styles";
-import CompleteProfile from './CompleteProfile';
+// import CompleteProfile from './CompleteProfile';
 
 
 
 // const Stack = createStackNavigator();
 
-  const SignUp = () => {
+  const SignUp = (props:any) => {
     const [password, setPassword] = useState("");
     const [email, setEmail] = useState("");
         return(
@@ -35,7 +35,7 @@ import CompleteProfile from './CompleteProfile';
               />
 
               <TouchableOpacity 
-              style ={styles.roundedButton}
+              style ={styles.roundedButtonSign}
             //   onPress={() =>
             //     this.props.navigation.navigate('CompleteProfile')
             //     }
