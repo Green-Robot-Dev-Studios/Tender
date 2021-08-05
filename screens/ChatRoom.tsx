@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import firebase from 'firebase/app';
 import 'firebase/firestore';
@@ -42,11 +42,12 @@ const ChatRoom = (props:any) => {
         </div>
 
         <form>
-            <input value = {formValue}/> onChange ={ (e:any) => setFormValue(e.target.value)}
+            <input value = {formValue}/> 
+             onChange ={ (e:any) => setFormValue(e.target.value)}
             <button type = "submit"> </button>
         </form>
-     
-       </>
+     </>
+       
 
     )
 /////////
@@ -62,7 +63,6 @@ function SignIn(){
     )
 
 }
-
 
 
 //////////
