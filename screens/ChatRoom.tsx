@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { Children, useState } from 'react';
+import { Button } from 'react-native';
 
 import firebase from 'firebase/app';
 import 'firebase/firestore';
@@ -12,7 +13,26 @@ admin.initializeApp();
 
 const db = admin.firestore()
 
-const ChatRoom = (props:any) => {
+
+function SignIn (props:any){
+    const signInWithGoogle = () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth().signInWithPopup(provider);
+
+    }
+    return(
+        
+        <button onClick={ signInWithGoogle }> Sign In</button>  
+        
+    )
+
+}
+
+///////
+
+
+
+function ChatRoom (){
     const messagesRef = db.collection('messages');
     const query = messagesRef.orderBy('createdAt').limit(24);
     const [messages] = useCollectionData (query, {idField: 'id'});
@@ -31,7 +51,7 @@ const ChatRoom = (props:any) => {
         setFormValue('');
 
     }
-///////
+
     return(
         <>
         <section>
@@ -43,7 +63,7 @@ const ChatRoom = (props:any) => {
 
         <form>
             <input value = {formValue}/> 
-             onChange ={ (e:any) => setFormValue(e.target.value)}
+             {/* onChange ={ (e:any) => setFormValue(e.target.value)} */}
             <button type = "submit"> </button>
         </form>
      </>
@@ -51,18 +71,6 @@ const ChatRoom = (props:any) => {
 
     )
 /////////
-
-function SignIn(){
-    const signInWithGoogle = () => {
-        const provider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(provider);
-
-    }
-    return(
-        <button onClick ={signInWithGoogle}> Sign In </button>
-    )
-
-}
 
 
 //////////
