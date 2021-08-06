@@ -7,12 +7,9 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 
-const admin = require('firebase-admin');
-admin.initializeApp();
-
-const db = admin.firestore()
 
 const ChatRoom = (props:any) => {
+    const db = firebase.firestore();
     const messagesRef = db.collection('messages');
     const query = messagesRef.orderBy('createdAt').limit(24);
     const [messages] = useCollectionData (query, {idField: 'id'});
