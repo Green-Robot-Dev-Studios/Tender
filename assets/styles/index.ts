@@ -6,6 +6,8 @@ export const WHITE = "#FFFFFF";
 export const GRAY = "#757E90";
 export const DARK_GRAY = "#363636";
 export const BLACK = "#000000";
+export const BLUE = "#428AF8";
+export const LIGHT_GRAY = "#D3D3D3";
 
 export const ONLINE_STATUS = "#46A575";
 export const OFFLINE_STATUS = "#D04949";
@@ -302,31 +304,19 @@ export default StyleSheet.create({
 
 
   //SIGNUP + PROFILE SET UP
-  textInput:{
+  textInput: {
+    // outlineWidth: 0,
+    // borderWidth: 0,
+    // borderBottomWidth: 2,
+    // borderColor: "gray"
+    // Specific numbers that work well on android.
     height: 40,
-    marginBottom: 30, 
-    color: '#000000',
-    borderWidth: 1,
-    borderRadius: 10 ,
-    width: 300,
-    paddingLeft: 20,
-    alignSelf: "center",
-    paddingRight: 20,
-    backgroundColor : "#FFFFFF"
-  
-    
+    paddingLeft: 6,
   },
 
-  textHeader:{
-    fontSize: 40,
-    paddingTop: 100,
-    color:'#000000',
-    paddingBottom: 10, 
-    marginBottom: 40,
-    
+  textHeader: {
     fontWeight: 'bold',
-    textAlign: "center" 
-    
+    // margin: "0 auto"
   },
 
   aboutMe:{

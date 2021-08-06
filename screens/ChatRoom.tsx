@@ -8,11 +8,8 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 
-const admin = require('firebase-admin');
-admin.initializeApp();
 
-const db = admin.firestore()
-
+<<<<<<< HEAD
 
 function SignIn (props:any){
     const signInWithGoogle = () => {
@@ -33,6 +30,10 @@ function SignIn (props:any){
 
 
 function ChatRoom (){
+=======
+const ChatRoom = (props:any) => {
+    const db = firebase.firestore();
+>>>>>>> 899c1c357f1b518f9274dd0eed35ff460260bb8b
     const messagesRef = db.collection('messages');
     const query = messagesRef.orderBy('createdAt').limit(24);
     const [messages] = useCollectionData (query, {idField: 'id'});

@@ -4,10 +4,10 @@ import CardStack, { Card } from "react-native-card-stack-swiper";
 import { City, Filters, CardItem } from "../components";
 import styles from "../assets/styles";
 import DEMO from "../assets/data/demo";
+import firebase from "firebase";
 
 const Home = () => {
   const [swiper, setSwiper] = useState<CardStack | null>(null);
-
   return (
     <ImageBackground
       source={require("../assets/images/bg.png")}
