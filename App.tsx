@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Home, Matches, Messages, Profile, CompleteProfile, ChatTest, SignUp, SignIn } from "./screens";
+import { Home, Matches, Messages, Profile, SignUp, SignIn } from "./screens";
 import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "./assets/styles";
 import TabBarIcon from "./components/TabBarIcon";
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
+import ChatStack from "./screens/ChatStack";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -35,7 +36,7 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      Global stack navigator
+      {/* Global stack navigator */}
       <Stack.Navigator>
         {/* If signed in, show tab navigator, else, show SignIn on top of SignUp */}
         {currentUser ? (
@@ -96,7 +97,7 @@ const App = () => {
 
                 <Tab.Screen
                   name="Chat"
-                  component={ChatTest}///////////
+                  component={ChatStack}
                   options={{
                     tabBarIcon: ({ focused }) => (
                       <TabBarIcon

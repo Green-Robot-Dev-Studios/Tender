@@ -305,7 +305,7 @@ export default StyleSheet.create({
 
   //SIGNUP + PROFILE SET UP
   textInput: {
-    // outlineWidth: 0,
+    // outline: 0,
     // borderWidth: 0,
     // borderBottomWidth: 2,
     // borderColor: "gray"

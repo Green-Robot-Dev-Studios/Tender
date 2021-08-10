@@ -14,7 +14,7 @@ function signIn(email:string, password:string) {
 
 }
 
-const SignUp = ({ navigation }: { navigation: any }) => {
+const SignIn = ({ navigation }: { navigation: any }) => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
 
@@ -75,4 +75,4 @@ const SignUp = ({ navigation }: { navigation: any }) => {
   );
 };
 
-export default SignUp;
+export default SignIn;

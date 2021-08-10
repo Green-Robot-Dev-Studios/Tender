@@ -2,10 +2,13 @@ import React from "react";
 import { Text, View, Image } from "react-native";
 import { MessageT } from "../types";
 import styles from "../assets/styles";
+import Identicon from 'react-identicons';
 
-const Message = ({ image, lastMessage, name }: MessageT) => (
+const Message = ({ id, lastMessage, name }:any) => (
   <View style={styles.containerMessage}>
-    <Image source={image} style={styles.avatar} />
+    <View style={{paddingRight: 10}}>
+      <Identicon string={id} size="30" />
+    </View>
     <View>
       <Text>{name}</Text>
       <Text style={styles.message}>{lastMessage}</Text>
