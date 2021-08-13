@@ -57,7 +57,7 @@ const CompleteProfile = (props:any) => {
             multiline={true}
             numberOfLines={1}
             onChangeText={setBio}
-            > </TextInput>
+            /> 
         
         <Text style ={styles.textHeader}>How have you been feeling lately?</Text>   
         <Text style ={styles.textSubHeader}>This helps others understand and support you where you need it most</Text>
@@ -67,7 +67,7 @@ const CompleteProfile = (props:any) => {
             multiline={true}
             numberOfLines={1}
             onChangeText={setBio}
-            > </TextInput>
+            /> 
 
           <TouchableOpacity style ={styles.roundedButton}> Submit </TouchableOpacity>
            
