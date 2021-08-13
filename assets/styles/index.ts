@@ -305,28 +305,81 @@ export default StyleSheet.create({
 
   //SIGNUP + PROFILE SET UP
   textInput: {
-    // outline: 0,
-    // borderWidth: 0,
-    // borderBottomWidth: 2,
-    // borderColor: "gray"
+    outline: 0,
+    borderWidth: 0,
+    borderBottomWidth: 2,
+    borderColor: "gray",
     // Specific numbers that work well on android.
     height: 40,
     paddingLeft: 6,
   },
 
-  textHeader: {
-    fontWeight: 'bold',
-    // margin: "0 auto"
+  inputBox: {
+    width: 170,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 25,
+    paddingHorizontal:16,
+    fontSize:16,
+    height: 30,
+    marginLeft: 15,
+    // marginVertical: 20,
+    color:'#00000',
+   
   },
+  row: {
+    flex: 3,
+    flexDirection: "row"
+    
+  },
+
+  // inputContainer:{
+  //   flex: 1,
+  //   flexDirection: 'row',
+  //   justifyContent: 'space-between'
+
+  // },
+
+  textHeader: {
+    fontSize: 15,
+    paddingTop: 10,
+    paddingLeft:16,
+    paddingBottom: 10,
+    textAlignVertical: 'top',
+    fontWeight: 500
+  },
+
+  header: {
+    textAlign: "Left",
+    fontSize: 20,
+    paddingTop: 35,
+    paddingBottom: 50,
+    fontWeight: 'bold',
+    paddingLeft: 15,
+    
+    
+  },
+  textSubHeader:{
+    fontSize: 13,
+    
+    paddingLeft:16,
+    paddingRight:16,
+    paddingBottom: 5,
+    textAlignVertical: 'top'
+
+  },
+
+
 
   aboutMe:{
     alignSelf: 'stretch',
-    height: 80,
+    height: 65,
     marginBottom: 30, 
-    color: '#000000',
-    borderWidth: 2,
-    borderColor: '#FF5722',
-    borderRadius: 10 ,
+    // color: '#000000',
+    borderWidth: 1,
+    width: 300,
+    marginLeft: 15,
+    borderColor: '#00000',
+    borderRadius: 14 ,
     backgroundColor : "#FFFFFF"
 
   },
@@ -345,5 +398,7 @@ export default StyleSheet.create({
 
  
 });
+
+
 
 

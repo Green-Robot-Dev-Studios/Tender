@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Home, Matches, Messages, Profile, SignUp, SignIn } from "./screens";
+import { Home, Matches, Messages, Profile, SignUp, SignIn, CompleteProfile } from "./screens";
 import { PRIMARY_COLOR, DARK_GRAY, BLACK, WHITE } from "./assets/styles";
 import TabBarIcon from "./components/TabBarIcon";
 import firebase from 'firebase/app';
@@ -69,7 +69,7 @@ const App = () => {
               >
                 <Tab.Screen
                   name="Explore"
-                  component={Home}
+                  component={CompleteProfile}
                   options={{
                     tabBarIcon: ({ focused }) => (
                       <TabBarIcon
